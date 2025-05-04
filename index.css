@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-image: url('https://storage.googleapis.com/ibw-blog/media/6e/2504b17e1d07b39b7c54f1bdda6b33.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+  header {
+    width: 100%;
+    background: #85aed6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+
+  #restartBtn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #680944;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .game-board {
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 10px;
+    max-width: 400px;
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    background: #117064;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+  }
+
+  .card.flipped, .card.matched {
+    background: #ecf0f1;
+    color: #2c3e50;
+    cursor: default;
+  }
+
+  .card-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 600px) {
+    .game-board {
+      max-width: 90vw;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
