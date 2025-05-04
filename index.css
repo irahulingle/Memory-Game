@@ -8,11 +8,6 @@ body {
     align-items: center;
     justify-content: flex-start;
     min-height: 100vh;
-    background-image: url('https://storage.googleapis.com/ibw-blog/media/6e/2504b17e1d07b39b7c54f1bdda6b33.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
   }
 
   header {
